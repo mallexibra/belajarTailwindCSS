@@ -510,6 +510,11 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
