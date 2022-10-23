@@ -1,0 +1,5 @@
+@tailwind base; // Reset css default browser
+@tailwind components; // component : container, grid, dll
+@tailwind utilities; // class class utility
+
+/* Akan dijalankan terlebih dahulu lalu akan dicompile menjadi file css baru */
