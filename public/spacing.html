@@ -4,21 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Belajar Spacing Tailwind</title>
+    <title>Belajar Spacing, Sizing, Typhography dan Warna Tailwind</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/output.css">
-    <style>
-        *{
-            outline: 1px solid red;
-        }
-    </style>
 </head>
 <body>
-    <h1>Belajar Spacing TailwindCSS</h1>
-    <section>
+    <h1 class="text-7xl text-center font-extrabold bg-gradient-to-r from-red-700 via-orange-400 to-slate-900 text-clip bg-transparent">Belajar Spacing TailwindCSS</h1>
+    <section class="mb-10">
         <h2>Spacing</h2>
-        <div class="m-1 font-bold">Margin</div>
+        <div class="m-auto font-bold">Margin</div>
         <!-- m-1: margin: 0.25rem / 4px -->
+        <div class="p-1">padding</div>
+        <!-- p-1: padding: 0.25rem / 4px -->
+    </section>
+
+    <section class="mb-10">
+        <h2>Sizing</h2>
+        <div class="w-1/2">Kotak</div>
+        <!-- w-1/2: width: 50%; width setengah dari elemen parentnya -->
+    </section>
+
+    <section class="mb-10 font-poppins">
+        <h2 class="mb-4 font-semibold">Belajar mengenai Typhography pada TailwindCSS</h2>
+        <p class="mb-4 italic">By Maulana Malik Ibrahim, 23 Oktober 2022</p>
+        <p class="mb4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae incidunt dicta magni fugiat voluptatibus autem obcaecati ut, minima magnam eaque.</p>
+        <p class="mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis consequatur vitae quasi, aperiam molestias id labore reprehenderit eaque qui nostrum repudiandae minima ullam ea rem quae nobis porro dicta eius!</p>
+        <!-- Pemilihan font hanya ada 3 yaitu: font-sans, font-serif, font-mono -->
+        <!-- Untuk menambahkan jenis font lainnya bisa mengimport font terlebih dahulu dan tambahkan secara manual pada tailwindcss -->
     </section>
 </body>
 </html>
